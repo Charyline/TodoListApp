@@ -1,4 +1,4 @@
-<h4>List des items</h4>
+<h4>Liste des items</h4>
 
 <ul>
   <li *ngFor="let item of items"><input (change)="checkItem(item)" type="checkbox" [checked]="item.checked" />{{item.value}}<a [routerLink]="['item/update/' + item.id]">Modifier</a> <a [routerLink]="" (click)="delete(item.id)">Supprimer</a></li>

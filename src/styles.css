@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: gray;
+}
+
+h4 {
+  color: blue;
+}
+
+li a {
+  margin-left: 15px;
+}
+
+input {
+  margin-left: 10px;
+}
