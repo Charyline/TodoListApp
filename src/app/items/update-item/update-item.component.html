@@ -1,0 +1,6 @@
+<form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+  <input type="hidden" class="form-control" formControlName="itemId" id="itemId" />
+  <label for="value">Valeur</label>
+  <input type="text" class="form-control" formControlName="itemValue" id="itemValue" />
+  <input type="submit" value="Modifier" />
+</form>

@@ -1,0 +1,9 @@
+<h4>List des items</h4>
+
+<ul>
+  <li *ngFor="let item of items">{{item.value}}<a [routerLink]="['item/update/' + item.id]">Modifier</a> <a [routerLink]="" (click)="delete(item.id)">Supprimer</a></li>
+</ul>
+
+<h4>Ajouter un item</h4>
+
+<create-item (refreshEvent)="refresh()"></create-item>
