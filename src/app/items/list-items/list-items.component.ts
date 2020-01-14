@@ -24,8 +24,15 @@ export class ListItemsComponent implements OnInit {
   }
 
   delete(itemId: number) {
-    console.log("deleting " + itemId)
     this.itemService.deleteItem(itemId).subscribe(data => {
+      this.refresh()
+    })
+  }
+
+  checkItem(item: Item) {
+
+    item.checked = !item.checked
+    this.itemService.updateItem(item).subscribe(data => {
       this.refresh()
     })
   }
